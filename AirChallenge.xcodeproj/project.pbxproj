@@ -103,14 +103,13 @@
 		2719F7A1265166730091664D /* AirChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				2772F2322651733D000D4850 /* Scenes */,
 				2719F7A2265166730091664D /* AppDelegate.swift */,
 				2719F7A4265166730091664D /* SceneDelegate.swift */,
 				2719F7A8265166730091664D /* Main.storyboard */,
 				2719F7AB265166740091664D /* Assets.xcassets */,
 				2719F7AD265166740091664D /* LaunchScreen.storyboard */,
 				2719F7B0265166740091664D /* Info.plist */,
-				2719F7DD26516C7A0091664D /* IconsViewController.swift */,
-				2772F22D26516DEA000D4850 /* IconsViewController.xib */,
 			);
 			path = AirChallenge;
 			sourceTree = "<group>";
@@ -132,6 +131,31 @@
 				2719F7C6265166750091664D /* Info.plist */,
 			);
 			path = AirChallengeUITests;
+			sourceTree = "<group>";
+		};
+		2772F2322651733D000D4850 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2772F2342651735B000D4850 /* Controller */,
+				2772F23326517350000D4850 /* View */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2772F23326517350000D4850 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2772F22D26516DEA000D4850 /* IconsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2772F2342651735B000D4850 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2719F7DD26516C7A0091664D /* IconsViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
