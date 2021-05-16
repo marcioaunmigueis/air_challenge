@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		2719F7A3265166730091664D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7A2265166730091664D /* AppDelegate.swift */; };
 		2719F7A5265166730091664D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7A4265166730091664D /* SceneDelegate.swift */; };
-		2719F7A7265166730091664D /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7A6265166730091664D /* IconsViewController.swift */; };
 		2719F7AA265166730091664D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2719F7A8265166730091664D /* Main.storyboard */; };
 		2719F7AC265166740091664D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2719F7AB265166740091664D /* Assets.xcassets */; };
 		2719F7AF265166740091664D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2719F7AD265166740091664D /* LaunchScreen.storyboard */; };
 		2719F7BA265166750091664D /* AirChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7B9265166750091664D /* AirChallengeTests.swift */; };
 		2719F7C5265166750091664D /* AirChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7C4265166750091664D /* AirChallengeUITests.swift */; };
 		2719F7D9265169C40091664D /* IconsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7D8265169C40091664D /* IconsViewControllerTests.swift */; };
+		2719F7DE26516C7A0091664D /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7DD26516C7A0091664D /* IconsViewController.swift */; };
+		2772F22E26516DEA000D4850 /* IconsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2772F22D26516DEA000D4850 /* IconsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		2719F79F265166730091664D /* AirChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2719F7A2265166730091664D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2719F7A4265166730091664D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2719F7A6265166730091664D /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		2719F7A9265166730091664D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2719F7AB265166740091664D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2719F7AE265166740091664D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		2719F7C4265166750091664D /* AirChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirChallengeUITests.swift; sourceTree = "<group>"; };
 		2719F7C6265166750091664D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2719F7D8265169C40091664D /* IconsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewControllerTests.swift; sourceTree = "<group>"; };
+		2719F7DD26516C7A0091664D /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
+		2772F22D26516DEA000D4850 /* IconsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +105,12 @@
 			children = (
 				2719F7A2265166730091664D /* AppDelegate.swift */,
 				2719F7A4265166730091664D /* SceneDelegate.swift */,
-				2719F7A6265166730091664D /* IconsViewController.swift */,
 				2719F7A8265166730091664D /* Main.storyboard */,
 				2719F7AB265166740091664D /* Assets.xcassets */,
 				2719F7AD265166740091664D /* LaunchScreen.storyboard */,
 				2719F7B0265166740091664D /* Info.plist */,
+				2719F7DD26516C7A0091664D /* IconsViewController.swift */,
+				2772F22D26516DEA000D4850 /* IconsViewController.xib */,
 			);
 			path = AirChallenge;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				2719F7AF265166740091664D /* LaunchScreen.storyboard in Resources */,
 				2719F7AC265166740091664D /* Assets.xcassets in Resources */,
 				2719F7AA265166730091664D /* Main.storyboard in Resources */,
+				2772F22E26516DEA000D4850 /* IconsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2719F7A7265166730091664D /* IconsViewController.swift in Sources */,
 				2719F7A3265166730091664D /* AppDelegate.swift in Sources */,
+				2719F7DE26516C7A0091664D /* IconsViewController.swift in Sources */,
 				2719F7A5265166730091664D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

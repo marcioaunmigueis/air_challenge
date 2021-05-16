@@ -6,11 +6,17 @@
 //
 
 import XCTest
+@testable import AirChallenge
 
 class IconsViewControllerTests: XCTestCase {
-
-  func test_failure() {
-    XCTFail("just for verify test ")
+  
+  func test_tableViewOutlet_shouldBeConnected() {
+    let sut = IconsViewController()
+    
+    sut.loadViewIfNeeded()
+    
+    XCTAssertNotNil(sut.tableView, "tableView")
   }
-
+  
+  
 }
