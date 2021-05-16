@@ -6,17 +6,29 @@
 //
 
 import XCTest
+import UIKit
 @testable import AirChallenge
 
 class IconsViewControllerTests: XCTestCase {
   
-  func test_tableViewOutlet_shouldBeConnected() {
-    let sut = IconsViewController()
-    
+  var sut: IconsViewController!
+  
+  override func setUp() {
+    sut = IconsViewController()
     sut.loadViewIfNeeded()
-    
+  }
+  
+  
+  func test_tableViewOutlet_shouldBeConnected() {
     XCTAssertNotNil(sut.tableView, "tableView")
   }
   
+  func test_tableView_shouldHasADelegate() {
+    XCTAssertNotNil(sut.tableView.delegate, "tableView delegate")
+  }
+  
+  func test_tableView_shouldHasADataSource() {
+    XCTAssertNotNil(sut.tableView.dataSource,"tableView datasource")
+  }
   
 }
