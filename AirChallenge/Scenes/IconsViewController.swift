@@ -14,11 +14,11 @@ class IconsViewController: UIViewController {
   
   var presenter: IconsPresenter!
   var items = [Icon]()
+  var loader = ImageLoader()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
     presenter = IconsPresenter(controller: self)
     presenter.getData()
     let nib = UINib(nibName: "IconCell", bundle: nil)
@@ -30,7 +30,7 @@ extension IconsViewController: IconsDelegate {
   func showData(data: [Icon]) {
     self.items = data
     DispatchQueue.main.async{
-  self.tableView.reloadData()
+      self.tableView.reloadData()
     }
   }
 }
@@ -53,14 +53,30 @@ extension IconsViewController: UITableViewDataSource {
       cell.titleLabel.text = icon.title
       cell.subtitleLabel.text = icon.subtitle
       cell.detailView.layer.cornerRadius = 10
+      
+      //      let token = loader.loadImage(icon.imageURL) { result in
+      //        do {
+      //          let image = try result.get()
+      //          DispatchQueue.main.async {
+      //            cell.iconImage.image = image
+      //          }
+      //        } catch {
+      //          print(error)
+      //        }
+      //      }
+      //      cell.onReuse = {
+      //        if let token = token {
+      //          self.loader.cancelLoad(token)
+      //        }
+      //      }
       return cell
     }
     return UITableViewCell()
   }
-
+  
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
-
+  
 }
 

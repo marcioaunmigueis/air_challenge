@@ -50,9 +50,18 @@
                             <constraint firstItem="MLZ-bf-6rQ" firstAttribute="top" secondItem="yUz-1C-8YV" secondAttribute="top" constant="2" id="xMy-Ft-O5z"/>
                         </constraints>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S8h-Hh-P9i">
+                        <rect key="frame" x="8" y="18" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="V62-mR-YJ2"/>
+                            <constraint firstAttribute="width" constant="50" id="yXC-Zy-Obx"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" name="background"/>
                 <constraints>
+                    <constraint firstItem="S8h-Hh-P9i" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JBd-oZ-aqX"/>
+                    <constraint firstItem="S8h-Hh-P9i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="eQ8-PS-5NE"/>
                     <constraint firstAttribute="bottom" secondItem="yUz-1C-8YV" secondAttribute="bottom" constant="8" id="lc9-BJ-ISg"/>
                     <constraint firstItem="yUz-1C-8YV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lpz-NO-yqo"/>
                     <constraint firstItem="yUz-1C-8YV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rG7-k8-9gM"/>
@@ -62,6 +71,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="detailView" destination="yUz-1C-8YV" id="QdT-2r-2pm"/>
+                <outlet property="iconImage" destination="S8h-Hh-P9i" id="2aP-rR-NmB"/>
                 <outlet property="subtitleLabel" destination="f8e-n8-AKX" id="1Jq-tn-qlq"/>
                 <outlet property="titleLabel" destination="MLZ-bf-6rQ" id="Jfk-ka-Sdt"/>
             </connections>
