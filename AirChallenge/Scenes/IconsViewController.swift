@@ -10,32 +10,57 @@ import UIKit
 class IconsViewController: UIViewController {
   
   @IBOutlet var tableView: UITableView!
-
+  let cellReuseIdentifier = "IconCell"
+  
   var presenter: IconsPresenter!
   var items = [Icon]()
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-      presenter = IconsPresenter(controller: self)
-      presenter.getData()
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    // Do any additional setup after loading the view.
+    presenter = IconsPresenter(controller: self)
+    presenter.getData()
+    let nib = UINib(nibName: "IconCell", bundle: nil)
+    tableView.register(nib, forCellReuseIdentifier: cellReuseIdentifier)
+  }
 }
 
 extension IconsViewController: IconsDelegate {
   func showData(data: [Icon]) {
     self.items = data
-    self.tableView.reloadData()
+    DispatchQueue.main.async{
+  self.tableView.reloadData()
+    }
+  }
+}
+
+
+extension IconsViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 80.0
   }
 }
 
 extension IconsViewController: UITableViewDataSource {
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
-  }
-  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return items.count
   }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let icon = items[indexPath.row]
+    if let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as? IconCell {
+      cell.titleLabel.text = icon.title
+      cell.subtitleLabel.text = icon.subtitle
+      cell.detailView.layer.cornerRadius = 10
+      return cell
+    }
+    return UITableViewCell()
+  }
+
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+
 }
+
