@@ -29,13 +29,21 @@
                         <outlet property="delegate" destination="-1" id="jRV-Lt-mk6"/>
                     </connections>
                 </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-kp-cgr">
+                    <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" name="background"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FSZ-Ix-Z6h" secondAttribute="bottom" id="6gP-gf-zQ2"/>
+                <constraint firstItem="SgT-kp-cgr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Iso-C8-5x2"/>
+                <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="top" secondItem="SgT-kp-cgr" secondAttribute="bottom" constant="16" id="Jed-3h-Y4p"/>
                 <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="KTc-gW-Pql"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FSZ-Ix-Z6h" secondAttribute="trailing" constant="20" id="Rbr-HW-POI"/>
+                <constraint firstItem="SgT-kp-cgr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fmZ-LY-puE"/>
+                <constraint firstItem="SgT-kp-cgr" firstAttribute="centerX" secondItem="FSZ-Ix-Z6h" secondAttribute="centerX" id="fv5-i2-RB0"/>
                 <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="vFt-QL-6bw"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
