@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,6 +17,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="326" height="86"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jo8-IV-Ob3">
+                        <rect key="frame" x="8" y="8" width="310" height="70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUz-1C-8YV">
                         <rect key="frame" x="8" y="8" width="310" height="70"/>
                         <subviews>
@@ -60,8 +64,12 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" name="background"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Jo8-IV-Ob3" secondAttribute="bottom" constant="8" id="6YW-04-NMO"/>
+                    <constraint firstItem="Jo8-IV-Ob3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Lm4-cR-cMO"/>
+                    <constraint firstItem="Jo8-IV-Ob3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="RQu-D8-6Fb"/>
+                    <constraint firstAttribute="trailing" secondItem="Jo8-IV-Ob3" secondAttribute="trailing" constant="8" id="aZf-3a-vwF"/>
                     <constraint firstAttribute="bottom" secondItem="yUz-1C-8YV" secondAttribute="bottom" constant="8" id="lc9-BJ-ISg"/>
                     <constraint firstItem="yUz-1C-8YV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lpz-NO-yqo"/>
                     <constraint firstItem="yUz-1C-8YV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rG7-k8-9gM"/>
@@ -70,8 +78,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="detailView" destination="yUz-1C-8YV" id="QdT-2r-2pm"/>
+                <outlet property="detailView" destination="yUz-1C-8YV" id="FB6-Pa-X91"/>
                 <outlet property="iconImage" destination="S8h-Hh-P9i" id="2aP-rR-NmB"/>
+                <outlet property="shadowView" destination="Jo8-IV-Ob3" id="pqT-it-GNR"/>
                 <outlet property="subtitleLabel" destination="f8e-n8-AKX" id="1Jq-tn-qlq"/>
                 <outlet property="titleLabel" destination="MLZ-bf-6rQ" id="Jfk-ka-Sdt"/>
             </connections>
@@ -79,8 +88,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <namedColor name="background">
-            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

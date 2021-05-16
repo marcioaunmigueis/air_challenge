@@ -13,7 +13,8 @@ class IconCell: UITableViewCell {
   @IBOutlet weak var subtitleLabel: UILabel!
   @IBOutlet weak var iconImage: UIImageView!
   @IBOutlet weak var detailView: UIView!
-  
+  @IBOutlet weak var shadowView: UIView!
+
   var onReuse: () -> Void = {}
   
   override func prepareForReuse() {
@@ -38,7 +39,14 @@ class IconCell: UITableViewCell {
     self.titleLabel.text = icon.title
     self.subtitleLabel.text = icon.subtitle
     self.detailView.layer.cornerRadius = 10
+    self.detailView.layer.masksToBounds = true
     self.iconImage.layer.cornerRadius = 5
+    self.shadowView.layer.masksToBounds = false
+    self.shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
+    self.shadowView.layer.shadowColor = UIColor.black.cgColor
+    self.shadowView.layer.shadowOpacity = 0.23
+    self.shadowView.layer.shadowRadius = 4
+    
     let token = loader.loadImage(icon.imageURL) { result in
       do {
         let image = try result.get()
