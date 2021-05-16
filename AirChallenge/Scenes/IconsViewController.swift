@@ -10,6 +10,7 @@ import UIKit
 class IconsViewController: UIViewController {
   
   @IBOutlet var tableView: UITableView!
+  @IBOutlet weak var spinner: UIActivityIndicatorView!
   let cellReuseIdentifier = "IconCell"
   
   var presenter: IconsPresenter!
@@ -30,6 +31,7 @@ extension IconsViewController: IconsDelegate {
   func showData(data: [Icon]) {
     self.items = data
     DispatchQueue.main.async{
+      self.spinner.stopAnimating()
       self.tableView.reloadData()
     }
   }

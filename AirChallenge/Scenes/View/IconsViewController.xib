@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconsViewController" customModule="AirChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="spinner" destination="Qnw-0R-71U" id="OVW-WP-Qv4"/>
                 <outlet property="tableView" destination="FSZ-Ix-Z6h" id="z7n-rX-jkM"/>
                 <outlet property="view" destination="iN0-l3-epB" id="fkU-0V-xHl"/>
             </connections>
@@ -19,6 +20,10 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-kp-cgr">
+                    <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-Ix-Z6h">
                     <rect key="frame" x="20" y="148" width="374" height="714"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -28,19 +33,21 @@
                         <outlet property="delegate" destination="-1" id="jRV-Lt-mk6"/>
                     </connections>
                 </tableView>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-kp-cgr">
-                    <rect key="frame" x="0.0" y="88" width="414" height="44"/>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Qnw-0R-71U">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <color key="color" red="0.52549019610000003" green="0.55294117649999996" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FSZ-Ix-Z6h" secondAttribute="bottom" id="6gP-gf-zQ2"/>
+                <constraint firstItem="Qnw-0R-71U" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GCU-3q-juO"/>
                 <constraint firstItem="SgT-kp-cgr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Iso-C8-5x2"/>
                 <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="top" secondItem="SgT-kp-cgr" secondAttribute="bottom" constant="16" id="Jed-3h-Y4p"/>
                 <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="KTc-gW-Pql"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FSZ-Ix-Z6h" secondAttribute="trailing" constant="20" id="Rbr-HW-POI"/>
+                <constraint firstItem="Qnw-0R-71U" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZW7-Qg-yta"/>
                 <constraint firstItem="SgT-kp-cgr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fmZ-LY-puE"/>
                 <constraint firstItem="SgT-kp-cgr" firstAttribute="centerX" secondItem="FSZ-Ix-Z6h" secondAttribute="centerX" id="fv5-i2-RB0"/>
                 <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="vFt-QL-6bw"/>
