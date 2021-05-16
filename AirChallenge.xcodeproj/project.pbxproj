@@ -16,6 +16,7 @@
 		2719F7D9265169C40091664D /* IconsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7D8265169C40091664D /* IconsViewControllerTests.swift */; };
 		2719F7DE26516C7A0091664D /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7DD26516C7A0091664D /* IconsViewController.swift */; };
 		2772F22E26516DEA000D4850 /* IconsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2772F22D26516DEA000D4850 /* IconsViewController.xib */; };
+		27B310562651825000A3B622 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B310552651825000A3B622 /* Icon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2719F7D8265169C40091664D /* IconsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewControllerTests.swift; sourceTree = "<group>"; };
 		2719F7DD26516C7A0091664D /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		2772F22D26516DEA000D4850 /* IconsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconsViewController.xib; sourceTree = "<group>"; };
+		27B310552651825000A3B622 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		2719F7A1265166730091664D /* AirChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				27B310542651823400A3B622 /* Models */,
 				2772F2322651733D000D4850 /* Scenes */,
 				2719F7A2265166730091664D /* AppDelegate.swift */,
 				2719F7A4265166730091664D /* SceneDelegate.swift */,
@@ -153,6 +156,14 @@
 				2719F7DD26516C7A0091664D /* IconsViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		27B310542651823400A3B622 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27B310552651825000A3B622 /* Icon.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 			files = (
 				2719F7A3265166730091664D /* AppDelegate.swift in Sources */,
 				2719F7DE26516C7A0091664D /* IconsViewController.swift in Sources */,
+				27B310562651825000A3B622 /* Icon.swift in Sources */,
 				2719F7A5265166730091664D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
