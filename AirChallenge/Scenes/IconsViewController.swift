@@ -12,7 +12,7 @@ class IconsViewController: UIViewController {
   @IBOutlet var tableView: UITableView!
 
   var presenter: IconsPresenter!
-  private var items = [Icon]()
+  var items = [Icon]()
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,8 @@ class IconsViewController: UIViewController {
       presenter = IconsPresenter(controller: self)
       presenter.getData()
     }
-    
-
- 
-
 }
+
 extension IconsViewController: IconsDelegate {
   func showData(data: [Icon]) {
     self.items = data
@@ -39,6 +36,6 @@ extension IconsViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 0
+    return items.count
   }
 }

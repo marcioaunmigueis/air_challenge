@@ -31,4 +31,15 @@ class IconsViewControllerTests: XCTestCase {
     XCTAssertNotNil(sut.tableView.dataSource,"tableView datasource")
   }
   
+  func test_showData_shouldUpdateNumbersOfIcons() {
+    sut.showData(data: [Icon(title: "test", subtitle: "little test", image: "")])
+                        XCTAssertEqual(sut.items.count, 1)
+  }
+  
+  func test_numberOfRows_afterShowData() {
+    sut.showData(data: [Icon(title: "test", subtitle: "little test", image: "")])
+    let numberOfItems = sut.tableView.numberOfRows(inSection: 0)
+    XCTAssertEqual(numberOfItems, 1)
+  }
+  
 }
