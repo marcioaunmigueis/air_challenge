@@ -13,3 +13,7 @@ struct Icon: Decodable {
   var image: String
   
 }
+
+struct Icons: Decodable {
+  var icons: [Icon]
+}

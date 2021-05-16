@@ -11,15 +11,27 @@ class IconsViewController: UIViewController {
   
   @IBOutlet var tableView: UITableView!
 
+  var presenter: IconsPresenter!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      presenter = IconsPresenter(controller: self)
+      presenter.getData()
     }
     
 
 
 
+}
+extension IconsViewController: IconsDelegate {
+  func showData() {
+    print("show data")
+    self.tableView.reloadData()
+  }
+  
+  
 }
 
 extension IconsViewController: UITableViewDataSource {

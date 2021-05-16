@@ -17,6 +17,8 @@
 		2719F7DE26516C7A0091664D /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719F7DD26516C7A0091664D /* IconsViewController.swift */; };
 		2772F22E26516DEA000D4850 /* IconsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2772F22D26516DEA000D4850 /* IconsViewController.xib */; };
 		27B310562651825000A3B622 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B310552651825000A3B622 /* Icon.swift */; };
+		27B3105F2651899D00A3B622 /* IconNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3105E2651899D00A3B622 /* IconNetwork.swift */; };
+		27B3106D26518D1300A3B622 /* IconsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3106C26518D1300A3B622 /* IconsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		2719F7DD26516C7A0091664D /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		2772F22D26516DEA000D4850 /* IconsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconsViewController.xib; sourceTree = "<group>"; };
 		27B310552651825000A3B622 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		27B3105E2651899D00A3B622 /* IconNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconNetwork.swift; sourceTree = "<group>"; };
+		27B3106C26518D1300A3B622 /* IconsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		2719F7A1265166730091664D /* AirChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				27B3105D2651898D00A3B622 /* Network */,
 				27B310542651823400A3B622 /* Models */,
 				2772F2322651733D000D4850 /* Scenes */,
 				2719F7A2265166730091664D /* AppDelegate.swift */,
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				2719F7DD26516C7A0091664D /* IconsViewController.swift */,
+				27B3106C26518D1300A3B622 /* IconsPresenter.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -164,6 +170,14 @@
 				27B310552651825000A3B622 /* Icon.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		27B3105D2651898D00A3B622 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				27B3105E2651899D00A3B622 /* IconNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,10 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B3105F2651899D00A3B622 /* IconNetwork.swift in Sources */,
 				2719F7A3265166730091664D /* AppDelegate.swift in Sources */,
 				2719F7DE26516C7A0091664D /* IconsViewController.swift in Sources */,
 				27B310562651825000A3B622 /* Icon.swift in Sources */,
 				2719F7A5265166730091664D /* SceneDelegate.swift in Sources */,
+				27B3106D26518D1300A3B622 /* IconsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
