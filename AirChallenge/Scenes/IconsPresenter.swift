@@ -6,21 +6,30 @@
 //
 
 import Foundation
+import Combine
 
 protocol IconsDelegate {
-  func showData()
+  func showData(data: [Icon])
 }
 
 class IconsPresenter {
   
+  var cancellables = Set<AnyCancellable>()
   weak var controller: IconsViewController!
+  var iconNetwork = IconNetwork()
   
   init(controller: IconsViewController) {
     self.controller = controller
   }
   
   func getData() {
-    controller.showData()
+    let url = "https://irapps.github.io/wzpsolutions/tests/ios-custom-icons/IconsData.json"
+    let urlRequest = URL(string: url)!
+    let publisher: AnyPublisher<Icons, Error> = iconNetwork.fetchURL(urlRequest)
+    publisher.sink(receiveCompletion: { _ in },
+                       receiveValue: { [weak self] (model: Icons) in
+      self?.controller.showData(data: model.icons)
+    }).store(in: &cancellables)
   }
   
 }

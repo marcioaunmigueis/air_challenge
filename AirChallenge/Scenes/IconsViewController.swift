@@ -12,6 +12,7 @@ class IconsViewController: UIViewController {
   @IBOutlet var tableView: UITableView!
 
   var presenter: IconsPresenter!
+  private var items = [Icon]()
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +23,14 @@ class IconsViewController: UIViewController {
     }
     
 
-
+ 
 
 }
 extension IconsViewController: IconsDelegate {
-  func showData() {
-    print("show data")
+  func showData(data: [Icon]) {
+    self.items = data
     self.tableView.reloadData()
   }
-  
-  
 }
 
 extension IconsViewController: UITableViewDataSource {
