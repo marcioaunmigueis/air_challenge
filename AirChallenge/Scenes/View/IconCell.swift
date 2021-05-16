@@ -38,7 +38,7 @@ class IconCell: UITableViewCell {
     self.titleLabel.text = icon.title
     self.subtitleLabel.text = icon.subtitle
     self.detailView.layer.cornerRadius = 10
-    
+    self.iconImage.layer.cornerRadius = 5
     let token = loader.loadImage(icon.imageURL) { result in
       do {
         let image = try result.get()
