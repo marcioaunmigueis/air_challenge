@@ -18,7 +18,7 @@ class IconsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    self.title = "Custom Icons"
     presenter = IconsPresenter(controller: self)
     presenter.getData()
     let nib = UINib(nibName: "IconCell", bundle: nil)
