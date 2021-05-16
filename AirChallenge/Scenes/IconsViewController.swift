@@ -9,8 +9,10 @@ import UIKit
 
 class IconsViewController: UIViewController {
   
+  @IBOutlet weak var searchBar: UISearchBar!
   @IBOutlet var tableView: UITableView!
   @IBOutlet weak var spinner: UIActivityIndicatorView!
+  
   let cellReuseIdentifier = "IconCell"
   
   var presenter: IconsPresenter!
@@ -25,6 +27,18 @@ class IconsViewController: UIViewController {
     let nib = UINib(nibName: "IconCell", bundle: nil)
     tableView.register(nib, forCellReuseIdentifier: cellReuseIdentifier)
   }
+}
+
+extension IconsViewController: UISearchBarDelegate {
+  
+  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    if searchText.count > 0 {
+    presenter.search(term: searchText)
+    } else {
+      presenter.search(term: "")
+    }
+  }
+  
 }
 
 extension IconsViewController: IconsDelegate {

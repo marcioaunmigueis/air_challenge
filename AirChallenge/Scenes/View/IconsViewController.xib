@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconsViewController" customModule="AirChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="SgT-kp-cgr" id="a71-fN-uGc"/>
                 <outlet property="spinner" destination="Qnw-0R-71U" id="OVW-WP-Qv4"/>
                 <outlet property="tableView" destination="FSZ-Ix-Z6h" id="z7n-rX-jkM"/>
                 <outlet property="view" destination="iN0-l3-epB" id="fkU-0V-xHl"/>
@@ -23,6 +24,9 @@
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-kp-cgr">
                     <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="JVJ-06-Vp3"/>
+                    </connections>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-Ix-Z6h">
                     <rect key="frame" x="20" y="148" width="374" height="714"/>

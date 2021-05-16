@@ -39,33 +39,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BF79041F-7510-4CC0-8588-5A54652BDC6C"
-            shouldBeEnabled = "Yes"
+            uuid = "8080D760-3D49-42B6-A04E-6F21F8F0299E"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AirChallenge/Scenes/IconsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "searchBar(_:textDidChange:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C5175535-F05A-424D-9E1F-AEDD3672BBF6"
-            shouldBeEnabled = "Yes"
+            uuid = "2CC63BE0-4422-4FFD-B081-50FDE9043829"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AirChallenge/Scenes/IconsViewController.swift"
+            filePath = "AirChallenge/Scenes/IconsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "search(term:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2CC63BE0-4422-4FFD-B081-50FDE9043829 - 198eb766c001eb22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AirChallenge.IconsPresenter.search(term: Swift.String) -&gt; ()"
+                  moduleName = "AirChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marciomigueis/Desktop/Projetos/Swift/AirChallenge/AirChallenge/Scenes/IconsPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "203">
+               </Location>
+               <Location
+                  uuid = "2CC63BE0-4422-4FFD-B081-50FDE9043829 - f6cbe2097739f270"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (AirChallenge.Icon) -&gt; Swift.Bool in AirChallenge.IconsPresenter.search(term: Swift.String) -&gt; ()"
+                  moduleName = "AirChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marciomigueis/Desktop/Projetos/Swift/AirChallenge/AirChallenge/Scenes/IconsPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
