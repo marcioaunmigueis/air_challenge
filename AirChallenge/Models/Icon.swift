@@ -10,11 +10,11 @@ import Foundation
 struct Icon: Decodable {
   var title: String
   var subtitle: String
-  var imageUrl: String
+  var image: String
   
   var imageURL: URL {
     get {
-      URL(string: imageUrl)!
+      URL(string: image)!
     }
   }
 }

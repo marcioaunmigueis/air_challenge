@@ -50,25 +50,7 @@ extension IconsViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let icon = items[indexPath.row]
     if let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as? IconCell {
-      cell.titleLabel.text = icon.title
-      cell.subtitleLabel.text = icon.subtitle
-      cell.detailView.layer.cornerRadius = 10
-      
-      //      let token = loader.loadImage(icon.imageURL) { result in
-      //        do {
-      //          let image = try result.get()
-      //          DispatchQueue.main.async {
-      //            cell.iconImage.image = image
-      //          }
-      //        } catch {
-      //          print(error)
-      //        }
-      //      }
-      //      cell.onReuse = {
-      //        if let token = token {
-      //          self.loader.cancelLoad(token)
-      //        }
-      //      }
+      cell.setup(icon: icon, loader: loader)
       return cell
     }
     return UITableViewCell()
