@@ -19,14 +19,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-Ix-Z6h">
-                    <rect key="frame" x="64" y="172" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-Ix-Z6h">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="O1N-C7-FKD"/>
+                        <outlet property="delegate" destination="-1" id="jRV-Lt-mk6"/>
+                    </connections>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FSZ-Ix-Z6h" secondAttribute="bottom" id="6gP-gf-zQ2"/>
+                <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KTc-gW-Pql"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FSZ-Ix-Z6h" secondAttribute="trailing" id="Rbr-HW-POI"/>
+                <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vFt-QL-6bw"/>
+            </constraints>
             <point key="canvasLocation" x="88" y="72"/>
         </view>
     </objects>
