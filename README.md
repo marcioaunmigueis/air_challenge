@@ -35,6 +35,6 @@ I didn't apply any appIcon nor any splashScreen ( although I believe they are us
 
 I didn't organize the list ordered by name. I had to write a simple map before tableview.reloadData().
 
-I used searcBarDelegate but I could use also Combine to get every change in searchBar text.
+I used searchBarDelegate to filter the result but I use Combine to get every change in searchBar text is a good alternative.
 
 
