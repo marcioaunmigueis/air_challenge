@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-kp-cgr">
+                <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-kp-cgr">
                     <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
@@ -29,7 +29,7 @@
                     </connections>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-Ix-Z6h">
-                    <rect key="frame" x="20" y="148" width="374" height="714"/>
+                    <rect key="frame" x="0.0" y="148" width="414" height="714"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                     <connections>
@@ -50,11 +50,11 @@
                 <constraint firstItem="SgT-kp-cgr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Iso-C8-5x2"/>
                 <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="top" secondItem="SgT-kp-cgr" secondAttribute="bottom" constant="16" id="Jed-3h-Y4p"/>
                 <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="KTc-gW-Pql"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FSZ-Ix-Z6h" secondAttribute="trailing" constant="20" id="Rbr-HW-POI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FSZ-Ix-Z6h" secondAttribute="trailing" id="Rbr-HW-POI"/>
                 <constraint firstItem="Qnw-0R-71U" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZW7-Qg-yta"/>
                 <constraint firstItem="SgT-kp-cgr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fmZ-LY-puE"/>
                 <constraint firstItem="SgT-kp-cgr" firstAttribute="centerX" secondItem="FSZ-Ix-Z6h" secondAttribute="centerX" id="fv5-i2-RB0"/>
-                <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="vFt-QL-6bw"/>
+                <constraint firstItem="FSZ-Ix-Z6h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vFt-QL-6bw"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="88" y="72"/>

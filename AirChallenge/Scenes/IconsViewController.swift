@@ -26,6 +26,9 @@ class IconsViewController: UIViewController {
     presenter.getData()
     let nib = UINib(nibName: "IconCell", bundle: nil)
     tableView.register(nib, forCellReuseIdentifier: cellReuseIdentifier)
+    self.navigationController?.navigationBar.prefersLargeTitles = true
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+    self.searchBar.backgroundImage = UIImage()
   }
 }
 

@@ -25,19 +25,7 @@ class IconCell: UITableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
-    //    roudedView.layer.cornerRadius = 10
-  }
-  
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-    
-    // Configure the view for the selected state
-  }
-  
-  func setup(icon: Icon, loader: ImageLoader) {
-    self.titleLabel.text = icon.title
-    self.subtitleLabel.text = icon.subtitle
+    // The shadow I did copying from StackOverflow
     self.detailView.layer.cornerRadius = 10
     self.detailView.layer.masksToBounds = true
     self.iconImage.layer.cornerRadius = 15
@@ -46,6 +34,11 @@ class IconCell: UITableViewCell {
     self.shadowView.layer.shadowColor = UIColor.black.cgColor
     self.shadowView.layer.shadowOpacity = 0.23
     self.shadowView.layer.shadowRadius = 4
+  }
+  
+  func setup(icon: Icon, loader: ImageLoader) {
+    self.titleLabel.text = icon.title
+    self.subtitleLabel.text = icon.subtitle
     
     let token = loader.loadImage(icon.imageURL) { result in
       do {
