@@ -27,7 +27,7 @@ I use a regular xib file. Storyboard is great when the app is small and one prog
  
 ## Testing
 
-I didn't write test for every class or method. 
+I didn't write test for every class or method. I didn't write test for networking nor to decode the network respond ( from json to model) .
 
 ## What I miss
 
