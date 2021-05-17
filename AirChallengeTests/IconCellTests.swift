@@ -8,17 +8,18 @@
 import XCTest
 @testable import AirChallenge
 
-class IconTableViewCellTests: XCTestCase {
+class IconCellTests: XCTestCase {
 
   func test_outlets() {
     let vc = IconsViewController()
     vc.loadViewIfNeeded()
-    let sut = vc.tableView.dequeueReusableCell(withIdentifier:  "IconTableViewCell") as! IconTableViewCell
+    let sut = vc.tableView.dequeueReusableCell(withIdentifier:  "IconCell") as! IconCell
     sut.awakeFromNib()
     sut.layoutIfNeeded()
     
-    XCTAssertNotNil(sut.title)
-    XCTAssertNotNil(sut.subtitle)
+    XCTAssertNotNil(sut.titleLabel)
+    XCTAssertNotNil(sut.subtitleLabel)
+    XCTAssertNotNil(sut.iconImage)
   }
 
 }

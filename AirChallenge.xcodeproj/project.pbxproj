@@ -19,7 +19,7 @@
 		27B310562651825000A3B622 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B310552651825000A3B622 /* Icon.swift */; };
 		27B3105F2651899D00A3B622 /* IconNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3105E2651899D00A3B622 /* IconNetwork.swift */; };
 		27B3106D26518D1300A3B622 /* IconsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3106C26518D1300A3B622 /* IconsPresenter.swift */; };
-		27B3109026519CEF00A3B622 /* IconTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3108F26519CEF00A3B622 /* IconTableViewCellTests.swift */; };
+		27B3109026519CEF00A3B622 /* IconCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3108F26519CEF00A3B622 /* IconCellTests.swift */; };
 		27B3109F2651AB6400A3B622 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3109D2651AB6400A3B622 /* IconCell.swift */; };
 		27B310A02651AB6400A3B622 /* IconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B3109E2651AB6400A3B622 /* IconCell.xib */; };
 		27B310A82651BC1600A3B622 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B310A72651BC1600A3B622 /* ImageLoader.swift */; };
@@ -61,7 +61,7 @@
 		27B310552651825000A3B622 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		27B3105E2651899D00A3B622 /* IconNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconNetwork.swift; sourceTree = "<group>"; };
 		27B3106C26518D1300A3B622 /* IconsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsPresenter.swift; sourceTree = "<group>"; };
-		27B3108F26519CEF00A3B622 /* IconTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewCellTests.swift; sourceTree = "<group>"; };
+		27B3108F26519CEF00A3B622 /* IconCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCellTests.swift; sourceTree = "<group>"; };
 		27B3109D2651AB6400A3B622 /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		27B3109E2651AB6400A3B622 /* IconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconCell.xib; sourceTree = "<group>"; };
 		27B310A72651BC1600A3B622 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				2719F7B9265166750091664D /* AirChallengeTests.swift */,
 				2719F7BB265166750091664D /* Info.plist */,
 				2719F7D8265169C40091664D /* IconsViewControllerTests.swift */,
-				27B3108F26519CEF00A3B622 /* IconTableViewCellTests.swift */,
+				27B3108F26519CEF00A3B622 /* IconCellTests.swift */,
 			);
 			path = AirChallengeTests;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B3109026519CEF00A3B622 /* IconTableViewCellTests.swift in Sources */,
+				27B3109026519CEF00A3B622 /* IconCellTests.swift in Sources */,
 				2719F7BA265166750091664D /* AirChallengeTests.swift in Sources */,
 				2719F7D9265169C40091664D /* IconsViewControllerTests.swift in Sources */,
 			);

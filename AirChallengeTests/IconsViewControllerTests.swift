@@ -18,7 +18,6 @@ class IconsViewControllerTests: XCTestCase {
     sut.loadViewIfNeeded()
   }
   
-  
   func test_tableViewOutlet_shouldBeConnected() {
     XCTAssertNotNil(sut.tableView, "tableView")
   }
@@ -42,4 +41,17 @@ class IconsViewControllerTests: XCTestCase {
     XCTAssertEqual(numberOfItems, 1)
   }
   
+  func test_searchBar_hasDelegate() {
+    XCTAssertNotNil(sut.searchBar.delegate, "searchBar delegate")
+  }
+  
+  func test_searchBar_textDidChange() {
+    let icon1 = Icon(title: "Tomato", subtitle: "for pasta sauce", image: "https://a-tomato.com/1")
+    let icon2 = Icon(title: "Lemon", subtitle: "for risoto", image: "https://an-icon.com/2")
+    sut.items = [icon1, icon2]
+    sut.searchBar.text = ""
+    sut.searchBar.delegate?.searchBar?(sut.searchBar, textDidChange: "L")
+    sut.tableView.reloadData()
+    XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), 1)
+  }
 }

@@ -40,7 +40,7 @@ class IconCell: UITableViewCell {
     self.subtitleLabel.text = icon.subtitle
     self.detailView.layer.cornerRadius = 10
     self.detailView.layer.masksToBounds = true
-    self.iconImage.layer.cornerRadius = 5
+    self.iconImage.layer.cornerRadius = 15
     self.shadowView.layer.masksToBounds = false
     self.shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
     self.shadowView.layer.shadowColor = UIColor.black.cgColor

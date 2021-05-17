@@ -40,7 +40,6 @@ class IconsPresenter {
       self.controller.showData(data: items)
       return
     }
-//    let n  = items.filter{ $0.title == term }
     self.controller.showData(data: items.filter{ $0.title.contains(term) } )
   }
 }

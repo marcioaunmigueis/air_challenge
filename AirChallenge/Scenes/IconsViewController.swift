@@ -30,15 +30,13 @@ class IconsViewController: UIViewController {
 }
 
 extension IconsViewController: UISearchBarDelegate {
-  
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
     if searchText.count > 0 {
-    presenter.search(term: searchText)
+      presenter.search(term: searchText)
     } else {
       presenter.search(term: "")
     }
   }
-  
 }
 
 extension IconsViewController: IconsDelegate {
